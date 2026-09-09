@@ -1,0 +1,23 @@
+1. Testcase phát hiện lỗi
++ số lượng ptu n = 3 (Mảng khởi tạo : leader[0,1,2])
++ chuỗi phép union: union(0, 1); union(0, 2)
+
+- union(0, 1) : Hàm tìm giá trị leader[0] (là 0) đổi thành leader[1] (là 1)
+-> Duyệt mảng và kq sẽ dc: leader = [1, 1, 2]
+- union(0, 2) :
+    Duyệt mảng :
+    +i = 0: so sánh leader[0] == leader[0] : đúng nên mảng leader = [2,1,2]
+    +i = 1: so sánh leader[1] == leader[0] : sai vì (1 != 2) nên mảng giữ nguyên [2,1,2]
+    Lý do : do leader[0] bị đổi thành 2 ở lần duyệt đầu , dù i = 0 và j = 1 thuộc cùng 1 tập hợp
+    , nhưng find(0) = 2 còn find(1) = 1.
+
+2. Sửa code : khởi tạo biến tạm ở ngoài vòng lặp .
+public void union(int p, int q){
+    int pid = leader[p];
+    int qid = leader[q];
+    for(int i = 0; i < leader.length; i++){
+        if(leader[i] == pid){
+            leader[i] = qid;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+a, -cấu trúc dữ liệu thu được có 1 thành phần liên thông
+   -vì lần lượt 1,2,3,.. n-1 đều được kết nối trực tiếp hoặc gián tiếp với 0 , nên các đều chung 1 mảng lưới
+
+b,
+- vì union(p, q) không bao giờ thay đôi leader[q] : ptu thuộc mã nhóm p sẽ bị đổi sang mã nhóm q
++ union(0,1) : 1 lần cập nhật
++ union(0,2) : 2 lần cập nhật
+...
++ union(0, n-1) : n-1 lần cập nhật
+
+Tổng số lần : 1 + 2 + 3 +...+ n-1 ~ n^2/2
+
+c,
+- Vì union(p, q) không thay đổi parent[q]. Tức là gốc p sẽ trỏ vào gốc q.
++ union(0, 1) : 0 ->1
++ union(0, 2) : 0 ->1 ->2
+...
++ union(0, n - 1) : 0 -> 1 -> 2 -> ... -> n-1
+
+- khi goi find(0) sẽ thực hiện n lần truy mảng từ 0 lên đỉnh là n-1
+- Đáp án : Theta(n)
+
+d,
++ union(0, 1) : kích thước bằng nhau nên : 1 -> 0
++ union(0, 2) : root(0) có size lớn hơn root(2) nên 2 trỏ trực tiếp vào 0
+...
+- Kết qua tạo thành lưới có 0 là trung tâm và các ptu còn lại nằm xung quanh trỏ trược tiep vào 0
+- Find(0) chính là gốc 0
+- Vậy chi phí truy cập mảng là Theta(1).
