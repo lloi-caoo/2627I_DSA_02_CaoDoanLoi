@@ -1,0 +1,16 @@
+- Phân tích cây :
+                 5
+                / \
+               0   7
+             / | \  \
+            2  4  6  9
+               |  / \
+               3 1   8
+
+- Đánh giá :
++ kích thước nhánh của 0 : 7 ptu ( 0,2,3,4,6,1,8)
++ kích thước nhánh của 5 ( khi ch union với 0) : 3 ptu (5,7,9)
+- vậy khi union(0,5) thì nhánh của 5 phải nối với root 0 khác với đề bài .
+- Vì Weighted Quick-Union: Thuật toán luôn yêu cầu gốc của cây nhỏ hơn phải trỏ vào gốc của cây lớn hơn. Ở đây, nhánh 0 có 7 phần tử, nhánh 5 tối đa chỉ có 3 phần tử (7 > 3). Nếu xảy ra kết nối, nút 5 bắt buộc phải trỏ ngược vào nút 0.
+
+- Vì vậy mảng không thể biễu diễn parent-link của 1 cấu trúc Weighted QuickUnion

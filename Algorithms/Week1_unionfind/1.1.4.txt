@@ -1,0 +1,26 @@
+
+4.
+- parent[8] co the nhan cac gia tri la: 0 , 4 , 8
+- Ta co ban dau : size(root(0)) = 4 , size(root(4)) = 4, size(root(8)) = 2;
+- Có 2 quy tac de la weighted quick union:
++ Chi co nut GOC (root) moi duoc phep nhan con truc tiep qua thao tac union.
++ parent[u] = v, nút u phai la goc va size[u] < size[v]
+
+TH1 : parent[8] = 8
+-Hop le. 8 la goc doc lap, do thi gom 3 cay rieng biet (size lan luot la 4, 4, 2).
+
+TH2 : parent[8] = 0
+- root 0 đang có size = 4
+- root 8 đang có size = 2
+- vì size(8) < size(0) : vay co the noi 8 vào root 0
+-> parent[8] = 0
+
+TH3:
+- root 4 đang có size = 4
+- root 8 đang có size = 2
+- vì size(8) < size(4) : vay co the noi 8 vao root 4
+-> parent[8] = 4
+
+Loai tru cac gia tri con lai:
+- Cac nut {1, 2, 3, 5, 6, 7}: Deu khong phai la gốc (da co cha), khong the nhan 8 lam con truc tiep.
+- Nut 9: Vi parent[9] = 8, neu parent[8] = 9 se tao thanh chu trinh (vong lap), vi pham cau truc cay.
