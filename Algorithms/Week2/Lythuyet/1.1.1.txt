@@ -1,0 +1,45 @@
+1.
+for(int i = 10; i < n + 5; i +=2)
+    op();
+- so lan lap : ((n + 5) - 10)/2 = n/2 - 2.5
+- tilde : ~ n/2
+- Big Theta: theta(n)
+
+2.
+for(int i = 1; i <= n * n * n; i *= 2)
+    op();
+- so lan lap : 2^k = n^3 ->  k = 3 log(n)
+- tilde : ~ 3log(n)
+- Big Theta : theta(log(n))
+
+3.
+for (int i = 0; i < n; i++)
+    for (int j = 0; j < 100; j++)
+        op();
+- so lan lap : n*100
+- tilde : ~n*100
+- Big Theta : theta(n)
+
+4.
+for (int i = 0; i * i < n; i++)
+    for (int j = 1; j < n; j *= 3)
+        op();
+- so lan lap : vòng ngoài (sqrt(n)) , vòng trong (log3(n))
+- tilde :sqrt(n)*log3(n)
+- Big Theta : theta(sqrt(n)*log(n))
+
+5.
+for (int i = 0; i < n; i++)
+    for (int j = 1; j < n; j *= 2)
+        op();
+- tilde:~ n*log2(n)
+- Big Theta : n*log(n)
+
+6.
+for (int i = 0; i < n; i++)
+    for (int j = 0; j < 100; j++)
+        for (int k = 0; k < n; k++)
+            for (int l = k; l < n; l++)
+                op();
+- tilde : n*100*(n(n+1)/2) ~ 50n^3
+- Big Theta : theta(n^3)
