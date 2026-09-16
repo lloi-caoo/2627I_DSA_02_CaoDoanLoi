@@ -1,0 +1,32 @@
+public class BST<Key extends Comparable<Key>, Value> {
+        private Node root;      	// the root of the red-black BST
+        private int n;                   	// number of key-value pairs
+        ...
+
+        private class Node {
+            private Key key;                  	// the key
+            private Value value;        	// the associated value
+            private Node parent;      	// link to parent
+            private Node left;                  // link to left subtree
+            private Node right;             	// link to right subtree
+            private int count;            	// number of nodes in subtree
+        }
+}
+
+1. Mô hình 64-bit
+Object header: 16 byte
+Reference: 8 byte
+int: 4 byte
+Object thường được làm tròn lên bội số của 8 byte.
+
+-Nhìn vào class Node:
++ có 5 reference : 5*8=40 byte
++ có 1 int : 4 byte
+
+-> 16 + 40 + 4 ~ 64 byte/node  ( làm tròn lên bội 8)
+vậy n node có 64n byte
+
+-Bộ nhớ của class BST
+-> 16 + 8 + 4 = 28 ~ 32 byte  (làm tròn lên bội 8)
+
+TỔNG : 32 + 64n ~ 64n byte = theta(n)

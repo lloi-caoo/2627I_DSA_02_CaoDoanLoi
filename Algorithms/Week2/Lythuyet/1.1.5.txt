@@ -1,0 +1,2 @@
+-từ hello sẽ được thực hiện : 100*n*(n+1)/2 ~ 50 n^2
+(vòng k : 100 lần  , vòng i,j : n*(n+1)/2)

@@ -1,0 +1,1 @@
+hàm op() được gọi là n^4.log(n)
