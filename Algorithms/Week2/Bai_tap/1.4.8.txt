@@ -1,0 +1,21 @@
+class EqualParis{
+    public static int countEqualPairs(int[] a) {
+        Arrays.sort(a); // Mất O(N log N)
+        int count = 0;
+        int currentRun = 1;
+
+        for (int i = 1; i < a.length; i++) {
+            if (a[i] == a[i - 1]) {
+                currentRun++;
+            } else {
+                // Cộng dồn số cặp của nhóm trước đó
+                count += currentRun * (currentRun - 1) / 2;
+                currentRun = 1; // Reset cho nhóm mới
+            }
+        }
+        // Xử lý nhóm cuối cùng khi vòng lặp kết thúc
+        count += currentRun * (currentRun - 1) / 2;
+
+        return count;
+    }
+}

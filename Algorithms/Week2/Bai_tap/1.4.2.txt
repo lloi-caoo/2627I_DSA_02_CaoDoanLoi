@@ -1,0 +1,18 @@
+// sua chuon trinh ThreeSum de chay dung ngay ca khi cac gia tri int lon den muc co the gay tran so
+
+public static int count(int[] a) {
+    int n = a.length;
+    int count = 0;
+
+    for (int i = 0; i < n; i++) {
+        for (int j = i + 1; j < n; j++) {
+            for (int k = j + 1; k < n; k++) {
+                if ((long) a[i] + a[j] + a[k] == 0) {        // dòng sửa
+                    count++;
+                }
+            }
+        }
+    }
+
+    return count;
+}
