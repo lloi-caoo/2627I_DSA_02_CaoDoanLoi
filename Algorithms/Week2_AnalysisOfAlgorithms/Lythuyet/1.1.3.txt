@@ -1,0 +1,2 @@
+-O(n^2) , O(n^3)
+-omega(n^2) , omega(log(n)), omega(n)
