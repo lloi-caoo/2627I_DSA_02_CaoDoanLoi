@@ -1,0 +1,20 @@
+1.
+a, enqueue(0), enqueue(1), dequeue(), enqueue(2), enqueue(3), dequeue(), enqueue(4), enqueue(5), dequeue(), enqueue(6), enqueue(7), dequeue()
+sau các thao tác trên noi dung in ra la :
+1 2 3 3 4 5 4 5 6 7
+
+b,
+- Thao tac enqueue cua self-printing queue chua n ptu co tgian chay trong truong hop tồi nhất là :
++ vì đây là cấu trúc self-printing queue khac cau truc binh thuong:
+   nếu thao tác enqueue() được thuc hien vao thao tac thu 3 thì cau truc phai kich hoạt thêm ham in toàn bộ queue
+-> vì mảng queue có n ptu do vậy : O(n).
+
+c,
+- chi phi in phu thuoc vao so ptu dang nam  trong queue tai cac thoi diem chia het cho 3
+- de chi phi queue lơn nhat , queue phai tich luy dc nhieu ptu nhat co the
+- kich ban xau nhat là thao tac deu la enqueue -> lam tang kich thuoc queue
+
+- 1 enqueue là O(1) -> n enqueue la 0(n)
+- tong so thao tac in : T = 3 + 6 + ... + 3k = 3*k*(k+1)/2
+- k ~ n/3 -> T ~ n^2/6 -> O(n^2)
+Vậy 0(n^2)/n = O(n)
