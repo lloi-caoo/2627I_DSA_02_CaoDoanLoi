@@ -1,0 +1,13 @@
+// 1.3.7
+
+1. Nếu dùng linkedList
+public Item peek(){
+    if(stack.isEmpty()) throw new NoSuchElementException("Stack underflow");
+    return first.item;
+}
+
+2. Nếu dùng mảng
+public Item peek(){
+    if(stack.isEmpty()) throw new NoSuchElementException("Stack underflow");
+    return a[N-1];  // N : lưu số lượng ptu
+}
