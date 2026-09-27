@@ -1,3 +1,7 @@
+// HackerRank : EqualStacks
+// tìm độ cao 3 chồng đĩa bằng nhau lớn nhất
+// Tư duy : đĩa nao cao nhất ưu tiên pop trước , vòng lặp cho đến khi 3 đĩa = nhau
+
 package Week3_Stack_Queue.BT_LapTrinh.Bai5;
 
 import edu.princeton.cs.algs4.StdIn;

@@ -6,7 +6,6 @@ import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 
 import java.util.NoSuchElementException;
-import java.util.Scanner;
 import java.util.Stack;
 
 public class QueueUse2Stack<Item> {
@@ -18,7 +17,9 @@ public class QueueUse2Stack<Item> {
     }
 
     private void checkEmpty() {
+        // nếu stackOut rỗng
         if (stackOut.isEmpty()) {
+            // pop stackIn và push vào stackOut
             while (!stackIn.isEmpty()) {
                 stackOut.push(stackIn.pop());
             }

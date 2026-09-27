@@ -1,4 +1,7 @@
 // HackerRank : Simple Text Editor
+// push vào stack trạng thái nghịch đảo tại bước đó
+// giá sử xóa 2 ptu cuối thì push vào stack : "1" + sb với sb là chuỗi bị xóa
+// khi undo thì pop từ stack để quay trở lại trạng thái trc đó
 
 package Week3_Stack_Queue.BT_LapTrinh.Bai4;
 
