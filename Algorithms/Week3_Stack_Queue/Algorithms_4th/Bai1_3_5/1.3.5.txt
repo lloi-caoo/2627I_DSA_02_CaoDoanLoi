@@ -1,0 +1,12 @@
+// 1.3.5
+
+Stack<Integer> stack = new Stack<Integer>();
+while (N > 0) {
+  stack.push(N % 2);
+  N = N / 2;
+}
+for (int d : stack) StdOut.print(d);
+StdOut.println();
+
+-đây là cách in biễu diễn nhị phân của N bằng stack
+- Khi N=50  thì kết quả là : 110010

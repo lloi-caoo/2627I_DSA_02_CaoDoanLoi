@@ -1,0 +1,14 @@
+// 1.3.3
+
+-Đáp án: Các chuỗi sai là b, f, g.
+-Quy luât là : Nếu một phần tử X vừa được pop ra khỏi Stack, mọi phần tử nhỏ hơn
+X đang còn kẹt lại trong Stack BẮT BUỘC phải đi ra theo thứ tự giảm dần.
+
++ Chuỗi b (... 9 0 1): Khi pop số 9, các số nhỏ hơn nó đang kẹt trong Stack là 0 và 1.
+Theo LIFO, chúng phải ra theo thứ tự 1 rồi mới đến 0. Chuỗi ghi 0 trước 1 là vô lý.
+
++ Chuỗi f (... 8 1 7 ...): Khi pop số 8, các số còn kẹt là 1, 2, 7.
+Đáng lẽ chúng phải ra theo thứ tự 7, 2, 1. Chuỗi để 1 ra trước 7 là vô lý.
+
++ Chuỗi g (... 3 0 2): Tại số 3, còn kẹt 0 và 2.
+Đáng lẽ phải ra 2 trước 0. Chuỗi để 0 trước 2 là vô lý.

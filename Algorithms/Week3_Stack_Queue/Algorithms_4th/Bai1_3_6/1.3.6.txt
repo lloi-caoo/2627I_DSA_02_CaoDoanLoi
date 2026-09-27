@@ -1,0 +1,8 @@
+// 1.3.6
+
+Stack<String> stack = new Stack<String>();
+while (!q.isEmpty())  stack.push(q.dequeue());
+while (!stack.isEmpty())  q.enqueue(stack.pop());
+
+- Đoạn code đảo ngược thứ tự các phần tử của Queue bằng cách đưa lần lượt
+các phần tử vào Stack rồi lấy ra và enqueue lại.
