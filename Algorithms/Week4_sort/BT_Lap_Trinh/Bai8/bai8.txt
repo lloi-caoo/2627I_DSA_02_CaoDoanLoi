@@ -1,0 +1,9 @@
+Đề bài : "Trong hai thuật toán sắp xếp Chọn (Selection sort) và Chèn/Xen vào (Insertion Sort),
+          dữ liệu đầu vào có nên lưu trong LinkedList (danh sách liên kết) không ?
+          Vì sao "
+
+Cả Selection Sort và Insertion Sort đều phải duyệt các phần tử khi thực hiện trên LinkedList,
+nên LinkedList không giúp giảm chi phí tìm kiếm. Tuy nhiên, Insertion Sort có thao tác chèn node;
+sau khi xác định được vị trí, việc chèn trên LinkedList có thể thực hiện trong O(1), trong khi Selection
+Sort chủ yếu đổi giá trị giữa hai node, vốn cũng chỉ O(1) và không tận dụng được ưu điểm đặc biệt của LinkedList.
+Vì vậy, nếu phải chọn, LinkedList phù hợp với Insertion Sort hơn, nhưng cả hai vẫn có độ phức tạp tổng thể O(n²).
