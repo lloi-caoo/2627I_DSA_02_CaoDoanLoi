@@ -1,0 +1,3 @@
+- Trong thuật toán Selection Sort :
++ một phân tử bất kì cần tối đa n - 1 lần đổi chổ để sắp xếp vào đúng chổ ( ví dụ : mảng = [ 5,1,2,3,4] thì ptu 5 cần 4 lần swap)
++ một phân tử bất kì cần trung bình 1 lần để đổi chổ sắp xếp vào đúng chổ
