@@ -2,8 +2,6 @@
 
 package Week4_sort.BT_Lap_Trinh.Bai3;
 
-import java.util.Scanner;
-
 public class Insertion_Sort_Part1 {
     public static void insertionSort(int n , int[] arr){
         int tmp = arr[n - 1];
@@ -22,12 +20,8 @@ public class Insertion_Sort_Part1 {
         }
     }
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int[] arr = new int[n];
-        for(int i = 0 ; i < n; i++){
-            arr[i] = sc.nextInt();
-        }
-        insertionSort(n, arr);
+        int[] arr = {2, 4, 6, 8, 3};
+
+        insertionSort(arr.length, arr);
     }
 }
