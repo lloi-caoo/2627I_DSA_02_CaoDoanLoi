@@ -1,3 +1,5 @@
+// Best: O(n + k), Average: O(n + k), Worst: O(n^2) (phụ thuộc cách sắp xếp trong bucket)
+
 package Week5_Merge_sort.Cac_loai_Sort;
 
 

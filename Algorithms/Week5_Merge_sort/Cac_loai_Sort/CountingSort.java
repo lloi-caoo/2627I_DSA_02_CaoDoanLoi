@@ -1,5 +1,5 @@
 // Use when: Pham vi gia tri nho (k khong qua lon). ( gia tri ptu max trong mảng ko quá lớn : tránh tạo hàm count quá lơn)
-// Time: O(n + k), Space: O(n + k).
+// Best: O(n + k), Average: O(n + k), Worst: O(n + k)
 // Dem truc tiep tan suat tung gia tri.
 
 package Week5_Merge_sort.Cac_loai_Sort;

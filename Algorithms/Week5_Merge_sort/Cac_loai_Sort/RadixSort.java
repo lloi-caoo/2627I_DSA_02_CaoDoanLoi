@@ -1,5 +1,5 @@
 // Use when: Pham vi gia tri lon nhung so chu so it/co gioi han. ( mảng có ptu max lớn nhưng số ptu mảng it)
-// Time: O(d * (n + b)), Space: O(n + b).
+// Best: O(d(n + k)), Average: O(d(n + k)), Worst: O(d(n + k))
 // Sap xep theo tung chu so bang Counting Sort on dinh.
 
 package Week5_Merge_sort.Cac_loai_Sort;

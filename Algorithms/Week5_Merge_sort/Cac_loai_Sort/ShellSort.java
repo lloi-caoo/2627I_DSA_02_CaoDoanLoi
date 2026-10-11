@@ -1,3 +1,4 @@
+// Best: phụ thuộc dãy gap, thường O(n log n), Average/Worst: phụ thuộc dãy gap
 
 package Week5_Merge_sort.Cac_loai_Sort;
 

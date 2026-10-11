@@ -1,4 +1,5 @@
 // ƯU ĐIỂM so với merge sort thông thường là tận dụng các run đã sắp xếp sẵn
+// Best: O(n) khi mảng đã có thứ tự, Average: O(n log n), Worst: O(n log n)
 
 package Week5_Merge_sort.Cac_loai_Sort;
 

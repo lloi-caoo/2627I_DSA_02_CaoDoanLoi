@@ -1,3 +1,5 @@
+// Best: O(n log n), Average: O(n log n), Worst: O(n log n)
+
 package Week5_Merge_sort.Cac_loai_Sort;
 
 class MergeSort {
