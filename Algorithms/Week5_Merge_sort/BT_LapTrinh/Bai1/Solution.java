@@ -1,3 +1,4 @@
+// binary search
 package Week5_Merge_sort.BT_LapTrinh.Bai1;
 
 
